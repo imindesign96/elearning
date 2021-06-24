@@ -1,0 +1,44 @@
+//css
+// .myNavBar .myNavBar__left
+
+
+.myNavBar{
+    .myNavBar__left{
+        align-items: center;
+        display: flex; 
+        .navbar-brand{
+            flex-grow: 1;
+            text-align: center;
+            margin-right: 5px;
+            img{
+                width: 110px;
+                
+            }
+        }
+    }
+    .myNavBar__categories{
+        flex-grow: 1;
+        text-align: center;
+        @include styleText($color-black-light,$fs-1,$fw-0);
+        i{
+            color: $color-gray-3;
+        }
+        cursor: pointer;
+    }
+    .myNavBar__font-search{
+        flex-grow: 8;
+        .input-group{
+            background-color: $color-white-cream;
+            .form-control{
+                background-color: transparent;
+                border-color: transparent;
+            }
+            .input-group-text{
+                background-color: transparent;
+                border-color: transparent;
+            }
+            
+        }
+        
+    }
+}

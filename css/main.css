@@ -10,4 +10,50 @@ body {
   color: #29303b;
   background-color: #fff;
 }
+
+.myNavBar .myNavBar__left {
+  align-items: center;
+  display: flex;
+}
+
+.myNavBar .myNavBar__left .navbar-brand {
+  flex-grow: 1;
+  text-align: center;
+  margin-right: 5px;
+}
+
+.myNavBar .myNavBar__left .navbar-brand img {
+  width: 110px;
+}
+
+.myNavBar .myNavBar__categories {
+  flex-grow: 1;
+  text-align: center;
+  color: #505763;
+  font-size: 13px;
+  font-weight: normal;
+  cursor: pointer;
+}
+
+.myNavBar .myNavBar__categories i {
+  color: #a1a7b3;
+}
+
+.myNavBar .myNavBar__font-search {
+  flex-grow: 8;
+}
+
+.myNavBar .myNavBar__font-search .input-group {
+  background-color: #f2f3f5;
+}
+
+.myNavBar .myNavBar__font-search .input-group .form-control {
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.myNavBar .myNavBar__font-search .input-group .input-group-text {
+  background-color: transparent;
+  border-color: transparent;
+}
 /*# sourceMappingURL=main.css.map */
