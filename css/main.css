@@ -45,15 +45,18 @@ body {
 
 .myNavBar .myNavBar__font-search .input-group {
   background-color: #f2f3f5;
+  border-color: transparent;
 }
 
 .myNavBar .myNavBar__font-search .input-group .form-control {
   background-color: transparent;
   border-color: transparent;
+  box-shadow: none;
 }
 
 .myNavBar .myNavBar__font-search .input-group .input-group-text {
   background-color: transparent;
   border-color: transparent;
+  color: #ec5252;
 }
 /*# sourceMappingURL=main.css.map */

@@ -29,13 +29,18 @@
         flex-grow: 8;
         .input-group{
             background-color: $color-white-cream;
+            border-color: transparent;
             .form-control{
                 background-color: transparent;
                 border-color: transparent;
+                box-shadow: none;
+                
             }
             .input-group-text{
                 background-color: transparent;
                 border-color: transparent;
+                color: $color-red-0;
+                
             }
             
         }
