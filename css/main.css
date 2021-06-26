@@ -11,6 +11,10 @@ body {
   background-color: #fff;
 }
 
+.myNavBar {
+  padding: .5rem 1rem;
+}
+
 .myNavBar .myNavBar__left {
   align-items: center;
   display: flex;
@@ -19,14 +23,14 @@ body {
 .myNavBar .myNavBar__left .navbar-brand {
   flex-grow: 1;
   text-align: center;
-  margin-right: 5px;
+  margin-right: 0;
 }
 
 .myNavBar .myNavBar__left .navbar-brand img {
   width: 110px;
 }
 
-.myNavBar .myNavBar__categories {
+.myNavBar .myNavBar__left .myNavBar__categories {
   flex-grow: 1;
   text-align: center;
   color: #505763;
@@ -35,28 +39,65 @@ body {
   cursor: pointer;
 }
 
-.myNavBar .myNavBar__categories i {
+.myNavBar .myNavBar__left .myNavBar__categories i {
   color: #a1a7b3;
 }
 
-.myNavBar .myNavBar__font-search {
+.myNavBar .myNavBar__left .myNavBar__font-search {
   flex-grow: 8;
+  margin-right: 25px;
 }
 
-.myNavBar .myNavBar__font-search .input-group {
+.myNavBar .myNavBar__left .myNavBar__font-search .input-group {
   background-color: #f2f3f5;
   border-color: transparent;
 }
 
-.myNavBar .myNavBar__font-search .input-group .form-control {
+.myNavBar .myNavBar__left .myNavBar__font-search .form-control {
   background-color: transparent;
   border-color: transparent;
   box-shadow: none;
+  transition: none;
 }
 
-.myNavBar .myNavBar__font-search .input-group .input-group-text {
+.myNavBar .myNavBar__left .myNavBar__font-search .form-control:focus {
+  background-color: #fff;
+  border-top-color: #dedfe0;
+  border-bottom-color: #dedfe0;
+  border-left-color: #dedfe0;
+}
+
+.myNavBar .myNavBar__left .myNavBar__font-search .form-control:focus + .input-group-text {
+  background-color: #fff;
+  border-top-color: #dedfe0;
+  border-bottom-color: #dedfe0;
+  border-right-color: #dedfe0;
+}
+
+.myNavBar .myNavBar__left .myNavBar__font-search .form-control:focus + .input-group-text:hover {
+  color: #fff;
+  background-color: #ec5252;
+}
+
+.myNavBar .myNavBar__left .myNavBar__font-search .input-group-text {
   background-color: transparent;
   border-color: transparent;
   color: #ec5252;
+}
+
+.myNavBar .myNavBar__left .myNavBar__font-search .input-group-text:hover {
+  color: #fff;
+  background-color: #ec5252;
+}
+
+.myNavBar .myNavBar__right .navbar-nav {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.myNavBar .myNavBar__right .navbar-nav .nav-item .nav-link {
+  color: #505763;
+  font-size: 13px;
+  font-weight: normal;
 }
 /*# sourceMappingURL=main.css.map */

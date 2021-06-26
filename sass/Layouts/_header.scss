@@ -3,20 +3,21 @@
 
 
 .myNavBar{
+    padding: .5rem 1rem;
     .myNavBar__left{
         align-items: center;
         display: flex; 
         .navbar-brand{
             flex-grow: 1;
             text-align: center;
-            margin-right: 5px;
+            margin-right: 0;
             img{
                 width: 110px;
                 
             }
         }
-    }
-    .myNavBar__categories{
+
+        .myNavBar__categories{
         flex-grow: 1;
         text-align: center;
         @include styleText($color-black-light,$fs-1,$fw-0);
@@ -25,25 +26,62 @@
         }
         cursor: pointer;
     }
-    .myNavBar__font-search{
+        .myNavBar__font-search{
         flex-grow: 8;
+        margin-right: $mg-1;;
         .input-group{
             background-color: $color-white-cream;
             border-color: transparent;
+        }
             .form-control{
                 background-color: transparent;
                 border-color: transparent;
                 box-shadow: none;
-                
+                transition: none;
+                &:focus{
+                    background-color: $color-white-0;
+                    border-top-color: $color-gray-4;
+                    border-bottom-color: $color-gray-4;
+                    border-left-color: $color-gray-4;
+                }
+                &:focus + .input-group-text{
+                    background-color: $color-white-0;
+                    border-top-color: $color-gray-4;
+                    border-bottom-color: $color-gray-4;
+                    border-right-color: $color-gray-4;
+                    &:hover{
+                        color: $color-white-0;
+                        background-color: $color-red-0;
+                    }
+                };
             }
             .input-group-text{
                 background-color: transparent;
                 border-color: transparent;
                 color: $color-red-0;
+                &:hover{
+                    color: $color-white-0;
+                    background-color: $color-red-0;
+                }
+                
                 
             }
             
         }
         
     }
-}
+
+    .myNavBar__right{
+        .navbar-nav{
+            justify-content: space-between;
+            align-items: center;
+            .nav-item{
+                .nav-link{
+                    @include styleText($color-black-light,$fs-1,$fw-0);
+                }
+            }
+        }
+         }
+    }
+   
+
