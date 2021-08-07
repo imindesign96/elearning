@@ -26,7 +26,7 @@
     border: 1px solid $border-hover;
 }
 
-@mixin styleFormSearch($bg-color, $bg-color-focus,$border-color,$color) {
+@mixin styleFormSearch($bg-color, $bg-color-focus,$border-color) {
     .input-group {
         background-color:$bg-color ;
         .form-control {
@@ -34,9 +34,9 @@
             border-color: transparent;
             box-shadow: none;
             transition: none;
-            color: $color;
+            color: $color-black-light;
             &::placeholder {
-                color: $color;
+                color: $color-black-light;
             }
             &:focus {
                 background-color: $bg-color-focus;
@@ -71,17 +71,5 @@
                 }
             }
         }
-    }
-}
-
-@mixin responsive($screen) {
-    @if map-has-key($map:$breakpoints, $key:$screen){
-        $value: map-get($map:$breakpoints , $key:$screen);
-        @media screen and (max-width:$value){
-            @content;
-        }
-    }
-    @else{
-        @warn "`{$screen}` isn't exist in breakpoints";
     }
 }
